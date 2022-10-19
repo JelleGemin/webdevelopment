@@ -1,0 +1,23 @@
+h1, h2, h3{
+    font-family: arial;
+    font-size: 1.8em;
+}
+#hoofding2{
+    font-size: 1.5em;
+}
+#hoofding3{
+    font-size: 1.4em;
+}
+p{
+    font-size: 1.2em;
+    font-family: "Times New Roman";
+}
+.p1{
+    color: #ff00;
+}
+.p2{
+    color: green;
+}
+.p3{
+    color: blue;
+}
