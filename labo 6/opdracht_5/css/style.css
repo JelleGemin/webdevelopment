@@ -1,0 +1,7 @@
+p > a{
+    background-image: url("../images/paperclip.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+
+}

@@ -1,0 +1,10 @@
+.checklist > li{
+    margin-bottom: 50px;
+    margin-left: 200px;
+    list-style-image: url("../images/checkbox.png");
+    font-size: 75px;
+}
+
+.checklist > .checked{
+    list-style-image: url("../images/checked.png");
+}
