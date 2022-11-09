@@ -1,0 +1,19 @@
+table{
+    border: 3px solid black;
+}
+
+th{
+    background-color: rgb(170,170,200);
+}
+.dagen{
+    color: rgb(200,190,240);
+    background-color: rgb(35,37,70);
+
+}
+
+td:first-child{
+    background-color:  rgb(255, 220, 220);
+}
+td:last-child{
+    background-color:rgb(255, 220, 220);
+}
