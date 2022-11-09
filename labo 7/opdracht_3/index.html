@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 3</title>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<table>
+  <tr class="alt"><td>Test</td></tr>
+  <tr><td class="onbekend">test 2</td></tr>
+</table>
+
+<ul>
+    <li>
+        <p>
+            Door de specificiteit in de tweede rij wordt er enkel gezocht naar de klasse onbekend, de klasse onbekend is een child van het tr element zonder klasse.
+            Hierdoor zal het kleur gewijzigd worden.
+            In de eerste rij telt de klasse voor meer mee dan het tr element. Hierdoor zal het kleur niet worden aangepast.
+        </p>
+    </li>
+</ul>
+</body>
+</html>
