@@ -1,0 +1,32 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Helvetica;
+}
+
+section > header{
+    background-image: url("../images/blaadjes.jpg");
+    height: 100px;
+    color: white;
+    font-size: 20px;
+}
+
+nav{
+    background-color: dimgrey;
+}
+nav > a{
+    color: mediumspringgreen;
+    text-decoration: none;
+}
+
+article{
+    background-color: lightgrey;
+    padding: 8px;
+    margin: 8px;
+
+}
+article > header{
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
