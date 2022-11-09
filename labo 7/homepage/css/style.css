@@ -1,0 +1,22 @@
+body{
+    font-family: Helvetica;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    background-color: lightgrey;
+    margin: 30px;
+    padding: 10px;
+}
+
+ul:nth-child(5) > li{
+    color: deepskyblue;;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+h1{
+    color: cyan;
+}
