@@ -4,11 +4,40 @@ table{
 
 th{
     background-color: rgb(170,170,200);
+    border: 1px solid black;
 }
-.dagen{
+tr:first-child > td{
     color: rgb(200,190,240);
     background-color: rgb(35,37,70);
 
+}
+
+tr:nth-child(2) > td:first-child{
+    background-color: grey;
+    color: darkgrey;
+}
+
+tr:last-child > td:nth-child(5){
+    background-color: grey;
+    color: darkgrey;
+}
+
+tr:last-child > td:nth-child(6){
+    background-color: grey;
+    color: darkgrey;
+}
+
+tr:last-child > td:nth-child(7){
+    background-color: grey;
+    color: darkgrey;
+}
+
+#vrijedag{
+    background-color: rgb(250,120,120);
+}
+
+td{
+    border: thin dotted;
 }
 
 td:first-child{
