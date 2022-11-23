@@ -1,5 +1,5 @@
 div {
-	text-align:center;
+	text-align: center;
 }
 
 .area {
@@ -32,4 +32,16 @@ div {
 	height: 100px;
 	background:blue;
 	display: inline-block;
+}
+
+span{
+	vertical-align: middle;
+}
+
+.opdracht3{
+	height: 100px;
+	width: 100px;
+	background: orange;
+	display:table-cell;
+	vertical-align: center;
 }

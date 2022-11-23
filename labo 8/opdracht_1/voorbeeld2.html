@@ -3,6 +3,11 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<div class="opdracht3">item 1</div>
+<div class="opdracht3">item 2</div>
+<div class="opdracht3">item 3</div>
+<div class="opdracht3">item 4</div>
+
 	<div class="area">01</div>
 	<div class="area tall">02</div>
 	<div class="area">03</div>
@@ -23,5 +28,33 @@
 	<div class="area tall">18</div>
 	<div class="area">19</div>
 	<div class="area short">20</div>
+
+<span>qsdf</span>
+
+
+	<ol>
+		<h1>Opdracht 3</h1>
+		<li>Waarom staat de tekst in de blokken horizontaal gecentreerd?:</li>
+		<p>Door de text-align: center. De tekst wordt hierdoor gecentreerd.</p>
+
+		<li>Waarom heeft vertical-align: center geen effect?:</li>
+		<p>Vertical-align heeft enkel effect op inline-block & inline elementen. Div is een block element.</p>
+
+		<li>Wat doet vertical-align:middle?</li>
+		<p>Vertical-align: middle zorgt ervoor dat een inline-block of inline element in het midden van de pagina wordt geplaatst.</p>
+
+		<li>Simpele manier om tekst te centreren: text-align:center;</li>
+
+		<li>Welke truct bestaat er om meerdere regels te centreren?</li>
+		<p>Aan de elementen een display: table-cell toekennen. Daarna een vertical-align: center. Dit is te zien bij de div's bovenaan de pagina.</p>
+
+		<li>Waarom krijd de regel voor class 'tall' voorrang?</li>
+		<p>CSS = Cascading Style Sheets. Dit wilt zeggen dat
+			het css bestand wordt gelezen van boven naar beneden.
+			Hierdoor kan je makkelijk elementen overschrijven.
+			Aangezien dat div element eerst een height krijgt van 100px en daarna een height van 150px,
+			wordt het element 150px hoog.
+		</p>
+	</ol>
 </body>
 </html>
