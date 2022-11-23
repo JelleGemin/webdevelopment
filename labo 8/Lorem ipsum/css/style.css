@@ -1,0 +1,16 @@
+div{
+    width: 49%;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    float:left;
+}
+
+.column2{
+    width: 49%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    float: right;
+    box-sizing: border-box;
+}
