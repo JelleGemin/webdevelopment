@@ -1,0 +1,65 @@
+body{
+    width: 95%;
+    font-size: 1.2em;
+    font-family: Verdana Helvetica Arial;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header > p > img{
+    width: 80%;
+    height: 60%;
+}
+
+h1{
+    color: #007e7e;
+    font-size: 150%;
+}
+h2{
+    color: #007e7e;
+    font-size: 130%;
+}
+section{
+    width: 70%;
+}
+.rest > h1, h2{
+    text-align: center;
+}
+
+article > h1{
+    color: orangered;
+}
+
+article > h2{
+    color: indianred;
+}
+
+a:hover{
+    background-color: saddlebrown;
+}
+
+.rest{
+    padding: 10px;
+    width: 30%;
+    border: 2px solid skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rest > p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.rest > p:last-child{
+    text-align: left;
+}
+
+footer{
+    font-size: 50%;
+}
