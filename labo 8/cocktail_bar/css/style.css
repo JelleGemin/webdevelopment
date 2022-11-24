@@ -11,20 +11,49 @@ header{
 
 header > p > img{
     width: 80%;
-    height: 60%;
+    height: 80%;
 }
 
-h1{
+section > article > h1{
     color: #007e7e;
     font-size: 150%;
 }
-h2{
+section > article > h2{
     color: #007e7e;
     font-size: 130%;
 }
 section{
     width: 70%;
 }
+
+#guarantee{
+    margin: 30px;
+    padding: 20px;
+    padding-left: 70px;
+    color: #444444;
+    border: dotted white;
+    background-color: #a7cece;
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+
+}
+
+.rest{
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
+    float: right;
+    flex-direction: column;
+    padding: 10px;
+    width: 25%;
+    border: 2px solid skyblue;
+}
+
+.rest > p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .rest > h1, h2{
     text-align: center;
 }
@@ -37,29 +66,17 @@ article > h2{
     color: indianred;
 }
 
-a:hover{
+.rest > p > a:hover{
     background-color: saddlebrown;
 }
 
-.rest{
-    padding: 10px;
-    width: 30%;
-    border: 2px solid skyblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.rest > p {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
 .rest > p:last-child{
-    text-align: left;
+    display: inline;
 }
 
 footer{
     font-size: 50%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
 }
