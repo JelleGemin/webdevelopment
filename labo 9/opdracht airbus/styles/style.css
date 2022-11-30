@@ -1,0 +1,111 @@
+body{
+    background-image: url("../fotos/pagebackground.png");
+    background-position-x: center;
+    font-family: Arial Helvetica sans-serif;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header{
+    display: inline-block;
+    color: darkblue;
+    height: 200px;
+    background-image: url("../fotos/bgsky3.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+}
+
+header:nth-child(1){
+    font-size: 300%;
+    font-weight: bold;
+}
+header:nth-child(2){
+    font-size: 240%;
+    font-weight: bold;
+}
+
+header > img{
+    position: absolute;
+    top: 80px;
+    right: 900px;
+}
+
+aside{
+    width: 250px;
+    background-color: #ddd;
+    border: 1px solid #999;
+    color: #666;
+    float: right;
+    padding-left: 10px;
+}
+aside > h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+
+main{
+    width: 700px;
+}
+
+main > div > img{
+    float:left;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+article{
+    background-color: white;
+    color: black;
+    padding-top: 20px;
+    padding: 20px 30px 20px 0;
+}
+
+article > p > span{
+    color: blue;
+    font-weight: bold;
+}
+
+section{
+    background-color: #999;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+section > div > img{
+    width: 180px;
+    height: 180px;
+    border: 10px solid white;
+}
+.foto{
+    border: 1px dotted white;
+    margin: 10px;
+}
+
+nav{
+    background-color: #666;
+    color: white;
+    line-height: 2em;
+}
+
+nav > a:hover{
+    color: red;
+}
+
+a{
+    color: white;
+}
+
+.column{
+    margin-left: 120px;
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+}
