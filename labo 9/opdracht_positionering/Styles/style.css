@@ -1,0 +1,13 @@
+article{
+    border: 1px solid black;
+    height: 300px;
+    margin-bottom: 10px;
+    background-color: beige;
+}
+article:nth-child(even) > p > img{
+   float: right;
+}
+
+article:nth-child(odd) > p > img{
+    float: left ;
+}
