@@ -2,10 +2,12 @@
     background-color: blue;
     color: white;
     height: 100px;
+    width: 200px;
 }
 .colorgray{
     background-color: gray;
     height: 100px;
+    width: 200px;
 }
 
 @media screen and (max-width: 768px){
