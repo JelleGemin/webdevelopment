@@ -13,7 +13,7 @@ header{
     color: darkblue;
     height: 200px;
     background-image: url("../fotos/bgsky3.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     text-align: center;
     width: 100%;
 }
