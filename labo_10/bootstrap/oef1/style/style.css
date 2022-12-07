@@ -1,0 +1,28 @@
+.colorblue{
+    background-color: blue;
+    color: white;
+    height: 100px;
+}
+.colorgray{
+    background-color: gray;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px){
+    div{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (min-width: 993px){
+    div{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
