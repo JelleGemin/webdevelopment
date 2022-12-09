@@ -1,0 +1,64 @@
+#a{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 140px;
+}
+#b{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+    background-color: yellow;
+}
+#c{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 200px;
+    background-color: red;
+}
+#d{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+    background-color: blue;
+}
+#e{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 120px;
+    background-color:  red;
+}
+#f{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+}
+#g{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 180px;
+    background-color: yellow;
+}
+#h{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+}
+#i{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+    background-color: green;
+}
+
+#j{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+    background-color: blue;
+}
+
+#k{
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 150px;
+}
