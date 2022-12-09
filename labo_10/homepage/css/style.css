@@ -10,19 +10,15 @@ header > img{
     width: 100%;
 }
 
-main{
-    margin: 0;
-    width: 700px;
-}
-
 section{
+    width: 640px;
     background-color: lightgrey;
     display: inline-block;
 }
 
 section > p{
     display: flex;
-    width: 400px;
+    width: 350px;
     padding-left: 20px;
 }
 
@@ -32,8 +28,9 @@ section > p{
     height: 30%;
 }
 
-aside{
-    margin-top: 22px;
+.zijbalk{
+    margin-top: 0px;
+    height: 686px;
     background-color: lightgrey;
     float: right;
 }
