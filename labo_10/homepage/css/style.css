@@ -1,20 +1,41 @@
 body{
     font-family: Helvetica;
-    width: 1200px;
-}
-
-header > img{
-    width: 90%;
+    width: 960px;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
+header > img{
+    width: 100%;
+}
+
+main{
+    margin: 0;
+    width: 700px;
+}
+
 section{
     background-color: lightgrey;
+    display: inline-block;
+}
+
+section > p{
+    display: flex;
+    width: 400px;
+    padding-left: 20px;
+}
+
+#papaRoach{
+    float: left;
+    width: 30%;
+    height: 30%;
 }
 
 aside{
+    margin-top: 22px;
     background-color: lightgrey;
+    float: right;
 }
 
 article{
