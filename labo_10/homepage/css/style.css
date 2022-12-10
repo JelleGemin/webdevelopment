@@ -18,25 +18,40 @@ section{
 
 section > p{
     display: flex;
-    width: 350px;
+    width: 380px;
     padding-left: 20px;
 }
 
 #papaRoach{
     float: left;
+    margin-left: 10px;
     width: 30%;
     height: 30%;
 }
 
 .zijbalk{
+    padding:0;
     margin-top: 0px;
-    height: 686px;
+    height: 669px;
     background-color: lightgrey;
     float: right;
 }
 
+.zijbalk > p, h3{
+    padding-left: 10px;
+}
+
 article{
+    margin-bottom: -17px;
     background-color: lightgrey;
+}
+
+article > h1, p{
+    padding-left: 10px;
+}
+
+section > h1, p{
+    padding-left: 10px;
 }
 
 ul:nth-child(5) > li{
@@ -51,17 +66,12 @@ h1{
 }
 
 @media screen and (max-width: 768px){
-    aside{
-        text-align: center;
-        width: 41.5%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
-    }
-
     .container{
         display: grid;
         grid-template-columns: auto;
+        margin-right: auto;
+        margin-left: auto;
+        width: 700px;
         text-align: center;
     }
 
