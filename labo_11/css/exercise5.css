@@ -13,21 +13,24 @@
     text-align:center;
     grid-row-gap: 20px;
 }
-
 .block.block1{
     grid-template-columns: 1fr 2fr;
     grid-column: span 3;
+    background-color: darkred;
  }
 .block.block2{
     grid-column: span 3;
+    background-color: mediumpurple;
 }
 .block.block3{
     grid-column-start: 1;
     grid-column-end: 2;
+    background-color: cornflowerblue;
 }
 .block.block4{
     grid-column-start: 2;
     grid-column-end: 4;
+    background-color: lightseagreen;
 }
 .block.block5{
     display: none;
