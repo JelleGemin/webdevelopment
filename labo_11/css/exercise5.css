@@ -1,36 +1,43 @@
 .container{
-
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
 }
 
 .container .block{
     padding:20px;
-    color: white;
+    color: black;
+    border: 1px solid red;
     font-size: 4em;
     font-weight:bold;
     text-align:center;
+    grid-row-gap: 20px;
 }
 
 .block.block1{
-
+    grid-template-columns: 1fr 2fr;
+    grid-column: span 3;
  }
 .block.block2{
-
+    grid-column: span 3;
 }
 .block.block3{
-
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .block.block4{
-
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 .block.block5{
-
+    display: none;
 }
 .block.block6{
-
+    display: none;
 }
 .block.block7{
-
+    display: none;
 }
 .block.block8{
-
+    display: none;
 }
