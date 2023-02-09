@@ -1,4 +1,12 @@
-body{
+.container{
     display: grid;
     grid-template-columns: repeat(2, auto);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+.container > ol{
+    grid-row: 2;
 }
