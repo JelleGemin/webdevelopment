@@ -3,10 +3,17 @@
     grid-template-columns: repeat(2, auto);
 }
 
-h1{
+#titel{
     display: flex;
     justify-content: center;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .container > ol{
+    margin: 50px;
     grid-row: 2;
 }
