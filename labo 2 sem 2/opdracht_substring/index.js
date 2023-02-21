@@ -5,11 +5,11 @@ const setup = () => {
 
 const getSubstring = () =>{
     let input = document.getElementById("input").value;
-    let start = document.getElementById("start");
-    let end = document.getElementById("end");
+    let start = document.getElementById("start").value;
+    let end = document.getElementById("end").value;
     let output = document.getElementById("output");
+    let text = input.toString();
 
-
-    output.innerHTML = input.substring(start, end);
+    output.innerHTML = text.substring(start, end);
 }
 window.addEventListener("load", setup);
