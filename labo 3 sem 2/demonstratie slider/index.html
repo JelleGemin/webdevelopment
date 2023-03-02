@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body> 
+<section>
+	<p>Open het console venster, versleep daarna de slider hieronder en kijk welke berichten er komen</p>
+	<input type="range" class="slider" value="50" min="0" max="100" />
+</section>
+<section>
+<p>Een gekleurd blokje :</p>
+<div class="colorDemo" />
+</section>
+<h1>Antwoorden opdracht 2</h1>
+<ul>
+	<li>Waar wordt de event listener gekoppeld aan de slider?</li>
+	<p>Regels 3 in het js bestand: let sliders = document.getElementsByClassName("slider");</p>
+
+	<li>Waarom moeten we die op twee soorten events koppelen?</li>
+	<p>De slider kan worden aangepast, hierdoor is het mogelijk dat je in de console een bericht ziet dat de slider zijn waarde verandert als je het verschuift.
+		Als je stopt met klikken dan wordt de waarde opgeslagen in een variable
+	</p>
+
+	<li>In de CSS file wordt nergens een rode kleur opgegeven, waar wordt dan wel de rode kleur van het blokje ingesteld?</li>
+	<p>
+		In het javascript bestand wordt de achtergrondkleur aangepast naar rood. Dit gebeurt op lijn 11: colorDemos[0].style.backgroundColor="red";
+	</p>
+
+	<li>Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of colorDemos?</li>
+	<p>
+
+	</p>
+</ul>
+
+<h1>Antwoorden opdracht 3</h1>
+<ul>
+	<li>Wat voor soort waarde zit er in die variablen (sliders, colorDemos)?</li>
+	<p>
+		colorDemos: HTMLCollection[div.colorDemos] </br>
+		sliders: HTMLCollection[input.slider]
+	</p>
+
+	<li>Hoeveel elementen zitter er in elke verzameling?</li>
+	<p>Beide arrays hebben een length van 1.</p>
+</ul>
+</body> 
+</html> 
