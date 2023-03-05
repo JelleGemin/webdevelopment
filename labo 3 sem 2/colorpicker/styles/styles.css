@@ -1,9 +1,19 @@
 .colorDemo {
-	width:100px;
-	height:100px;
+	width:200px;
+	height:200px;
 	border:1px solid black;
+	row-span: 3;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	align-items: center;
 }
 
 input{
-	display: block;
+	grid-column: 1;
+	display: flex;
+	flex-direction: column;
 }
