@@ -6,7 +6,7 @@
     <title>Producten</title>
 </head>
 <body>
-<table>
+<table border="1px">
  <tr>
   <th>Producten</th>
   <th>Prijs</th>
@@ -19,28 +19,28 @@
   <td class="prijs">10.00 Eur</td>
   <td><input type="number" value="0" class="aantal"/></td>
   <td>6%</td>
-  <td>0</td>
+  <td class="subtotaal">0</td>
  </tr>
  <tr>
   <td>product2</td>
   <td class="prijs">15.00 Eur</td>
   <td><input type="number" value="0" class="aantal"/></td>
   <td>21%</td>
-  <td>0</td>
+  <td class="subtotaal">0</td>
  </tr>
  <tr>
   <td>product3</td>
   <td class="prijs">12.20 Eur</td>
   <td><input type="number" value="0" class="aantal"/></td>
   <td>21%</td>
-  <td>0</td>
+  <td class="subtotaal">0</td>
  </tr>
  <tr>
-  <td>Totaal</td>
-  <td id="berekendTotaal"></td>
+  <td colspan="4">Totaal</td>
+  <td id="berekendTotaal">0</td>
  </tr>
 </table>
-
+<button id="bereken">Herbereken</button>
 <script type="text/javascript" src="script/index.js"></script>
 </body>
 </html>
