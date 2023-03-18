@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Oefening</title> 
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+
+<body> 
+
+	<form onsubmit="return false">
+		<div class="line">
+			<label for="voornaam">Voornaam:</label>
+			<input type="text" id="txtVoornaam" name="voornaam" maxlength="30">
+			<span id="errVoornaam"></span><br>
+
+			<label for="familienaam">Familienaam:</label>
+			<input type="text" id="familienaam" name="familienaam" maxlength="50" required>
+			<span id="familienaam-error"></span><br>
+
+			<label for="geboortedatum">Geboortedatum:</label>
+			<input type="text" id="geboortedatum" name="geboortedatum" required>
+			<span id="geboortedatum-error"></span><br>
+
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" required>
+			<span id="email-error"></span><br>
+
+			<label for="aantal_kinderen">Aantal kinderen:</label>
+			<input type="number" id="aantal_kinderen" name="aantal_kinderen">
+			<span id="aantal_kinderen-error"></span><br>
+
+			<button type="submit" id="btnValideer">Verzenden</button>
+		</div>
+	</form>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body> 
+</html> 
