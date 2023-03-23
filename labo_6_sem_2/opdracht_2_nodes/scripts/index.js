@@ -7,6 +7,7 @@ const setup = () => {
 
     let image = document.createElement("img");
     image.src = "images/foto.jpg";
+    image.height = 150
     document.getElementsByTagName("body")[0].append(image);
 }
 
