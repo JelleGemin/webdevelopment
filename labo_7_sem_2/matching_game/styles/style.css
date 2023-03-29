@@ -1,0 +1,12 @@
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+img{
+    height: 150px;
+    width: 100px;
+}

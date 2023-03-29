@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+#playField{
+    position:relative;
+    border:solid 1px black;
+    box-sizing: border-box;
+}
+
+
+#target {
+    position: absolute;
+}
