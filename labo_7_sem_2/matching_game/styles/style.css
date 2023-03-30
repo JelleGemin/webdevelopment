@@ -1,9 +1,12 @@
 .row{
     display: grid;
     grid-template-columns: repeat(4, auto);
+    display: flex;
+    justify-content: space-evenly;
     column-gap: 20px;
     width: 500px;
     margin-bottom: 10px;
+    margin-right: 50px;
 }
 
 img{
