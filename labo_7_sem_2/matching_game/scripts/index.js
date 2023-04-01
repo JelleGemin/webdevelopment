@@ -21,12 +21,13 @@ const setup = () => {
 
     shuffle(kaarten);
     let index = 0;
-    let playfield = document.createElement("div");
-    document.body.appendChild(playfield);
+    let speelveld = document.createElement("div");
+    speelveld.classList.add("speelveld")
+    document.body.appendChild(speelveld);
     for(let i = 0; i < AANTAL_VERTICAAL; i++){
         let row = document.createElement('div');
         row.className = "row";
-        playfield.appendChild(row);
+        speelveld.appendChild(row);
         for(let i = 0; i < AANTAL_HORIZONTAAL; i++){
             let div = document.createElement("div")
             div.classList.add("kaart");
@@ -52,23 +53,24 @@ const setup = () => {
 
 const draaiOm = (event) => {
     if (aantalKliks < 2) {
-        //kaart stelt de div voor met de voorkant en de achterkant als childnodes
         const kaart = event.target.parentNode;
-        //zorgen dat de kaart draait, de voorkant wordt zichtbaar en de achterkant ontzichtbaar
+
         kaart.querySelector('.achterkant').style.display = 'none';
         kaart.querySelector('.voorkant').style.display = 'block';
 
         aantalKliks++;
         if (aantalKliks === 1) {
             kaart1 = kaart;
-        } else {
+        } else if(aantalKliks === 2){
             kaart2 = kaart;
 
+            disableClicking();
+
             if(checkIfPoint(kaart1, kaart2)){
-                kaart1.style.visibility = "hidden"
-                kaart2.style.visibility = "hidden"
+                setTimeout(verwijderKaarten, 500)
             } else {
                 setTimeout(() => {
+                    disableClicking();
                     kaart1.querySelector('.achterkant').style.display = 'block';
                     kaart1.querySelector('.voorkant').style.display = 'none';
                     kaart2.querySelector('.achterkant').style.display = 'block';
@@ -79,12 +81,27 @@ const draaiOm = (event) => {
         }
     }
 };
+
+const verwijderKaarten = () =>{
+    disableClicking();
+    kaart1.style.visibility = "hidden"
+    kaart2.style.visibility = "hidden"
+}
 const checkIfPoint = (kaart1,  kaart2) =>{
         if(kaart1.querySelector(".voorkant").src === kaart2.querySelector(".voorkant").src){
             return true;
         }else{
             return false;
         }
+}
+
+const disableClicking = () =>{
+    let speelveld = document.querySelector(".speelveld");
+    if(speelveld.classList.contains("disableClick")){
+        speelveld.classList.remove("disableClick")
+    }else{
+        speelveld.classList.add("disableClick");
+    }
 }
 
 window.addEventListener("load", setup);
