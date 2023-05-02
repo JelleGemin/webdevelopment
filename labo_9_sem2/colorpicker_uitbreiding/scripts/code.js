@@ -1,5 +1,4 @@
-let savedColors = JSON.parse(localStorage.getItem("array"));
-let sliderValues = JSON.parse(localStorage.getItem("sliderValues"))
+let savedColors = JSON.parse(localStorage.getItem('array')) || [];
 
 const createColor = (red, green, blue) =>{
 	let color = {
@@ -12,11 +11,7 @@ const createColor = (red, green, blue) =>{
 }
 
 const initialize = () => {
-	if(sliderValues === null){
-		let slidersValue = localStorage.setItem("sliderValues", JSON.stringify(createColor(128,255,128)));
-	}else{
-		let slidersValue = JSON.parse(localStorage.getItem("sliderValues"));
-	}
+    let slidersValue = JSON.parse(localStorage.getItem("sliderValues")) || localStorage.setItem("sliderValues", JSON.stringify(createColor(128,255,128)));
 
 	updateLabel(slidersValue.red, slidersValue.green,slidersValue.blue)
 	updateSlider(slidersValue.red, slidersValue.green,slidersValue.blue)
@@ -103,6 +98,7 @@ const clear = (event) =>{
 
 const saveColor = () => {
 	let currentColor = createColor(getRed(), getGreen(), getBlue());
+
 	savedColors.push(JSON.stringify(currentColor))
 	localStorage.setItem("array", JSON.stringify(savedColors));
 	printSavedColors();
@@ -113,7 +109,6 @@ const printSavedColors = () =>{
 	while(savedColorsList.firstChild){
 		savedColorsList.removeChild(savedColorsList.firstChild)
 	}
-
 	for(let i = 0; i < savedColors.length; i++){
 		let save = JSON.parse(savedColors[i]);
 
