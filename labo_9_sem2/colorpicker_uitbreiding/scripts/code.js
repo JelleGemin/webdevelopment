@@ -13,7 +13,7 @@ const createColor = (red, green, blue) =>{
 
 const initialize = () => {
 	if(sliderValues === null){
-		let slidersValue = localStorage.setItem("sliderValues", [128,255,128]);
+		let slidersValue = localStorage.setItem("sliderValues", JSON.stringify(createColor(128,255,128)));
 	}else{
 		let slidersValue = JSON.parse(localStorage.getItem("sliderValues"));
 	}
