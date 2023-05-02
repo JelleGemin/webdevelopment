@@ -11,9 +11,15 @@ const createColor = (red, green, blue) =>{
 }
 
 const initialize = () => {
-    let slidersValue = JSON.parse(localStorage.getItem("sliderValues")) || localStorage.setItem("sliderValues", JSON.stringify(createColor(128,255,128)));
+    let slidersValue = JSON.parse(localStorage.getItem("sliderValues"));
+    
+    if (!slidersValue) {
+        slidersValue = createColor(128, 255, 128);
+        localStorage.setItem("sliderValues", JSON.stringify(slidersValue));
+    }
 
-	updateLabel(slidersValue.red, slidersValue.green,slidersValue.blue)
+
+    updateLabel(slidersValue.red, slidersValue.green,slidersValue.blue)
 	updateSlider(slidersValue.red, slidersValue.green,slidersValue.blue)
 	
 	let sliders = document.getElementsByClassName("slider");
