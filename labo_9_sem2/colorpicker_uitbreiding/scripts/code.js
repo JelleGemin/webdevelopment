@@ -12,7 +12,11 @@ const createColor = (red, green, blue) =>{
 }
 
 const initialize = () => {
-	let slidersValue = JSON.parse(localStorage.getItem("sliderValues"));
+	if(sliderValues === null){
+		let slidersValue = localStorage.setItem("sliderValues", [128,255,128]);
+	}else{
+		let slidersValue = JSON.parse(localStorage.getItem("sliderValues"));
+	}
 
 	updateLabel(slidersValue.red, slidersValue.green,slidersValue.blue)
 	updateSlider(slidersValue.red, slidersValue.green,slidersValue.blue)
