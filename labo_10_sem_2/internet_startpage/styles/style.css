@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.history{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.btnGo{
+    padding: 2%;
+    width: 20%;
+}
+
+#history{
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.card{
+    padding-left: 2%;
+}
+
+.google{
+    background-color: #4285f4;
+}
+
+.twitter{
+    background-color: #1da1f2;
+}
+
+.youtube{
+    background-color: #ff0000;
+}
+
+.instagram{
+    background-color: #c32aa3;
+}
