@@ -79,7 +79,7 @@ const addCard = (h) => {
 };
 
 const printHistory = () => {
-    let localStorageArray = JSON.parse(history);
+    let localStorageArray = JSON.parse(localStorage.getItem("history"));;
     let historyList = document.getElementById("history");
     while(historyList.firstChild) {
         historyList.removeChild(historyList.firstChild);
